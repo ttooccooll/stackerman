@@ -55,26 +55,20 @@
     margin-right: 5px;
 }
 
+body {
+    color: #969696;
+    background: #121214;
+}
+
 h1 {
     line-height: 64px;
     margin-bottom: 0;
-}
-
-.html5 {
-    background: url('../img/html5.png');
-    width: 64px;
-    height: 64px;
-    display: block;
-    float: left;
-    margin-right: 10px;
-}
-
-.html5 span {
-    display: none;
+    color: #969696;
 }
 
 h1 strong {
-    color: #FF4444;
+    color: rgb(250 218 94);
+    text-shadow: 0 0 6px #fada5e;
 }
 
 .credits {

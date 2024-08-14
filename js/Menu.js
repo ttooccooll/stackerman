@@ -68,7 +68,7 @@ Menu = Class.extend({
         this.views.push(bg);
 
         // game title
-        text = text || [{text: 'Bomber', color: '#ffffff'}, {text: 'man', color: '#ff4444'}];
+        text = text || [{text: 'Stacker', color: '#969696'}, {text: 'man', color: '#5c8001'}];
 
         var title1 = new createjs.Text(text[0].text, "bold 35px Helvetica", text[0].color);
         var title2 = new createjs.Text(text[1].text, "bold 35px Helvetica", text[1].color);
@@ -101,8 +101,8 @@ Menu = Class.extend({
             that.setMode('single');
         });
 
-        var singleTitle1 = new createjs.Text("single", "16px Helvetica", "#ff4444");
-        var singleTitle2 = new createjs.Text("player", "16px Helvetica", "#ffffff");
+        var singleTitle1 = new createjs.Text("single", "16px Helvetica", "#969696");
+        var singleTitle2 = new createjs.Text("stacker", "16px Helvetica", "#5c8001");
         var singleTitleWidth = singleTitle1.getMeasuredWidth() + singleTitle2.getMeasuredWidth();
         var modeTitlesY = modesY + modeSize - singleTitle1.getMeasuredHeight() - 20;
 

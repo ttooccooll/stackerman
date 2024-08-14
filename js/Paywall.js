@@ -24,7 +24,7 @@ function startGame(){
 function createInvoice() {
     
     const Http = new XMLHttpRequest();
-    const url = 'https://api.zebedee.io/v0/charges';
+    const url = 'https://sandbox-api.zebedee.io/v0/charges';
 
     Http.open("POST", url);
 
@@ -53,7 +53,7 @@ function createInvoice() {
 
 function checkPayment() {
     const Http = new XMLHttpRequest();
-    const url = 'https://api.zebedee.io/v0/charges/' + currentChargeID;
+    const url = 'https://sandbox-api.zebedee.io/v0/charges/' + currentChargeID;
 
     Http.open("GET", url);
 
