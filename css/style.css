@@ -45,14 +45,15 @@
     align-items: center;
     margin-top: 20px;
 }
+#satsLabel {
+    color: #5c8001;
+}
 .footer .alert {
     text-align: center;
     line-height: 35px;
-}
-
-.footer .alert img {
-    margin-top: -3px;
-    margin-right: 5px;
+    background: #121214;
+    text-shadow: none;
+    color: #FFFFFF;
 }
 
 body {

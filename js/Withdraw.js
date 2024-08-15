@@ -34,7 +34,7 @@ function updateWithdrawUI(){
 
 function createWithdrawLNURL(){
     const Http = new XMLHttpRequest();
-    const url = 'https://sandbox-api.zebedee.io/v0/withdrawal-requests';
+    const url = 'https://api.zebedee.io/v0/withdrawal-requests';
 
     Http.open("POST", url);
 
@@ -67,7 +67,7 @@ function createWithdrawLNURL(){
 
 function checkWithdraw() {
     const Http = new XMLHttpRequest();
-    const url = 'https://sandbox-api.zebedee.io/v0/withdrawal-requests/' + currentChargeID;
+    const url = 'https://api.zebedee.io/v0/withdrawal-requests/' + currentChargeID;
 
     Http.open("GET", url);
 

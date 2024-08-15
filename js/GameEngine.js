@@ -61,8 +61,8 @@ GameEngine = Class.extend({
             that.setup();
         });
         queue.loadManifest([
-            {id: "playerBoy", src: "img/george.png"},
-            {id: "playerGirl", src: "img/betty.png"},
+            {id: "playerBoy", src: "img/darth.png"},
+            {id: "playerGirl", src: "img/george.png"},
             {id: "playerGirl2", src: "img/betty2.png"},
             {id: "tile_grass", src: "img/tile_grass.png"},
             {id: "tile_wall", src: "img/tile_wall.png"},
@@ -76,7 +76,7 @@ GameEngine = Class.extend({
         createjs.Sound.addEventListener("fileload", this.onSoundLoaded);
         createjs.Sound.alternateExtensions = ["mp3"];
         createjs.Sound.registerSound("sound/bomb.ogg", "bomb");
-        createjs.Sound.registerSound("sound/game.ogg", "game");
+        createjs.Sound.registerSound("sound/nightflight.ogg", "game");
 
         // Create menu
         this.menu = new Menu();
@@ -150,7 +150,7 @@ GameEngine = Class.extend({
     playSoundtrack: function() {
         if (!gGameEngine.soundtrackPlaying) {
             gGameEngine.soundtrack = createjs.Sound.play("game", "none", 0, 0, -1);
-            gGameEngine.soundtrack.setVolume(1);
+            gGameEngine.soundtrack.setVolume(.5);
             gGameEngine.soundtrackPlaying = true;
         }
     },

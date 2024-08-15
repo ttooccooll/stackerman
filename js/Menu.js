@@ -117,7 +117,7 @@ Menu = Class.extend({
         this.views.push(singleTitle2)
 
         var iconsY = modesY + 13;
-        var singleIcon = new createjs.Bitmap("img/betty.png");
+        var singleIcon = new createjs.Bitmap("img/george.png");
         singleIcon.sourceRect = new createjs.Rectangle(0, 0, 48, 48);
         singleIcon.x = singleX + (modeSize - 48) / 2;
         singleIcon.y = iconsY;
