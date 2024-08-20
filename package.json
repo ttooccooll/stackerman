@@ -2,12 +2,11 @@
     "name": "stackerman",
     "version": "1.0.0",
     "scripts": {
-        "start": "bower install && serve -s .",
-        "dev": "bower install && serve -s ."
+        "start": "serve -l tcp://0.0.0.0:8000 & open http://127.0.0.1:8000",
+        "dev": "serve -l tcp://0.0.0.0:8000 & open http://127.0.0.1:8000"
     },
     "dependencies": {
         "serve": "^14.2.3",
-        "bower": "^1.8.12"
+        "open": "^9.0.0"
     }
-  }
-  
+}

@@ -1,4 +1,4 @@
-Bitcoin Bomberman
+Stackerman
 ================
 
 Fork of Bombergirl ```git clone https://github.com/MattSkala/html5-bombergirl.git``` with rudimentary bitcoin added via ZEBEDEE API, made for demo purposes only, not a secure game
