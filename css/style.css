@@ -19,6 +19,16 @@
     text-align: center;
     display: none;
 }
+#withdrawButton {
+    background-color: #f9d12f;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: none;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+    color: #121214;
+}
 #paywall {
     
     width:100%;
@@ -83,4 +93,31 @@ h1 strong {
 
 .credits a:hover {
     color: black;
+}
+
+.links {
+  font-size: medium;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.links a {
+  color: #969696;
+  font-size: medium;
+  margin: 10px;
+}
+
+.onesat {
+  font-family: monospace;
+  margin-left: 30%;
+  font-size: 14px;
+  white-space: nowrap;
+  background: none;
+  color: #969696;
+  border: none;
+}
+
+button:hover {
+  color: #ddd;
+  cursor: pointer;
 }

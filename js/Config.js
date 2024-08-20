@@ -1,5 +1,5 @@
 Config = Class.extend({
-    API_KEY: "txiyq2iKKfbk006K1ytdn7TXFW2eFqgu",
+    API_KEY: "78jxFQEaceAnUuak2dC8cadvyZeGmn5V",
     FEE:10,
     BITCOIN_VALUE:10,
 });

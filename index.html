@@ -26,14 +26,17 @@
     <script  type="text/javascript" src="js/qrcode.js"></script>
     <script type="text/javascript" src="js/Paywall.js"></script>
     <script type="text/javascript" src="js/Withdraw.js"></script>
-
+    <script type="text/javascript" src="js/Onesat.js"></script>
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/docs/assets/css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body onload="gGameEngine.load()">
     <div class="container">
         <div class="page-header">
-            <h1></i> Stacker<strong>man</strong></h1>
+            <h1>
+                </i> Stacker<strong>man</strong>
+                <button class="onesat" onclick="togglePrice()">1sat=1sat</button>
+            </h1>
         </div>
         <div id="game">
             <canvas id="canvas" width="545" height="416"></canvas>
@@ -72,6 +75,18 @@
 
 
         <div class="footer">
+            <div class="links">
+                <a href="https://national-debt-snake.vercel.app/" target="blank">snake</a> \
+                <a href="https://nostrminusnostr.vercel.app/" target="blank">nostr</a> \
+                <a href="https://nostrminusnostr.vercel.app/sports" target="blank">sports</a> \
+                <a href="https://bitcoin-chess.vercel.app/" target="blank">chess</a>
+                </br>
+                </br>
+                <a href="https://arcadewallet.vercel.app/" target="blank">arcade</a> \
+                <a href="https://tnglnbits.vercel.app/" target="blank">star trek</a> \
+                <a href="https://bitcoin-battleship.vercel.app/" target="blank">battleship</a> \
+                <a href="https://bitcoin-facts.onrender.com/" target="blank">bitcoin</a>
+            </div>
             <div class="alert alert-success">
                 This game has nothing to hide. <a href="http://github.com/MattSkala/html5-bombergirl">Download the source code on GitHub.</a>
             </div>
