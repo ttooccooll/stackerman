@@ -27,7 +27,6 @@ GameEngine = Class.extend({
     bonusesImg: null,
 
     playing: false,
-    mute: false,
     soundtrackLoaded: false,
     soundtrackPlaying: false,
     soundtrack: null,
@@ -61,9 +60,9 @@ GameEngine = Class.extend({
             that.setup();
         });
         queue.loadManifest([
-            {id: "playerBoy", src: "img/darth.png"},
+            {id: "playerBoy", src: "img/fbi.png"},
             {id: "playerGirl", src: "img/cowboy.png"},
-            {id: "playerGirl2", src: "img/betty2.png"},
+            {id: "playerGirl2", src: "img/darth.png"},
             {id: "tile_grass", src: "img/tile_grass.png"},
             {id: "tile_wall", src: "img/tile_wall.png"},
             {id: "tile_wood", src: "img/tile_wood.png"},
@@ -74,11 +73,9 @@ GameEngine = Class.extend({
         ]);
 
         createjs.Sound.addEventListener("fileload", this.onSoundLoaded);
-        createjs.Sound.alternateExtensions = ["mp3"];
-        createjs.Sound.registerSound("sound/bomb.ogg", "bomb");
+        createjs.Sound.registerSound("sound/explosion.mp3", "bomb");
         createjs.Sound.registerSound("sound/nightflight.ogg", "game");
 
-        // Create menu
         this.menu = new Menu();
     },
 
@@ -97,9 +94,6 @@ GameEngine = Class.extend({
 
         this.spawnBots();
         this.spawnPlayers();
-
-        // Toggle sound
-        gInputEngine.addListener('mute', this.toggleSound);
 
         // Restart listener
         // Timeout because when you press enter in address bar too long, it would not show menu
@@ -150,7 +144,7 @@ GameEngine = Class.extend({
     playSoundtrack: function() {
         if (!gGameEngine.soundtrackPlaying) {
             gGameEngine.soundtrack = createjs.Sound.play("game", "none", 0, 0, -1);
-            gGameEngine.soundtrack.setVolume(.5);
+            gGameEngine.soundtrack.setVolume(.2);
             gGameEngine.soundtrackPlaying = true;
         }
     },
@@ -370,19 +364,9 @@ GameEngine = Class.extend({
      * Moves specified child to the front.
      */
     moveToFront: function(child) {
-        var children = gGameEngine.stage.getNumChildren();
+        var children = gGameEngine.stage.numChildren;
         gGameEngine.stage.setChildIndex(child, children - 1);
-    },
-
-    toggleSound: function() {
-        if (gGameEngine.mute) {
-            gGameEngine.mute = false;
-            gGameEngine.soundtrack.resume();
-        } else {
-            gGameEngine.mute = true;
-            gGameEngine.soundtrack.pause();
-        }
-    },
+    }, 
 
     countPlayersAlive: function() {
         var playersAlive = 0;

@@ -20,4 +20,3 @@ Credits
 -------
 [Tile Art Batch by Hyptosis](http://www.newgrounds.com/art/view/hyptosis/tile-art-batch-1)<br>
 [One More LPC Alternate Character by Radomir Dopieralski](http://opengameart.org/content/one-more-lpc-alternate-character)<br>
-[Explosion Sound Effect by Adrian Gallant](http://www.flashkit.com/soundfx/Cartoon/Explosions/Explosio-Adrian_G-7936)

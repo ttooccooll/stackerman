@@ -86,10 +86,7 @@ Bomb = Entity.extend({
     explode: function() {
         this.exploded = true;
 
-        if (!gGameEngine.mute && gGameEngine.soundtrackPlaying) {
-            var bombSound = createjs.Sound.play("bomb");
-            bombSound.setVolume(0.2);
-        }
+
 
         // Fire in all directions!
         var positions = this.getDangerPositions();
@@ -112,8 +109,9 @@ Bomb = Entity.extend({
                 }
             }
         }
-
         this.remove();
+        var bombSound = createjs.Sound.play("bomb");
+        bombSound.setVolume(0.1);
     },
 
     /**
