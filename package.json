@@ -2,14 +2,15 @@
     "name": "stackerman",
     "version": "1.0.0",
     "scripts": {
-        "start": "npm run build && node server.js",
-        "dev": "npm run build && node server.js",
-        "build": "npm install && npm run prepare",
+        "start": "node server.js",
+        "dev": "node server.js",
+        "build": "npm install",
         "prepare": "echo 'Build step goes here'"
     },
     "dependencies": {
         "bootstrap": "^5.3.3",
         "easeljs": "^1.0.2",
+        "express": "^4.19.2",
         "open": "^9.0.0",
         "preloadjs": "^1.0.1",
         "soundjs": "^1.0.1"
