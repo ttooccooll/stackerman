@@ -92,7 +92,7 @@ Menu = Class.extend({
 
         // singleplayer button
         var singleX = gGameEngine.size.w / 2 - modeSize - modesDistance;
-        var singleBgGraphics = new createjs.Graphics().beginFill("rgba(0, 0, 0, 0.5)").drawRect(singleX, modesY, modeSize, modeSize);
+        var singleBgGraphics = new createjs.Graphics().beginFill("rgba(90, 90, 90, 0.5)").drawRect(singleX, modesY, modeSize, modeSize);
         var singleBg = new createjs.Shape(singleBgGraphics);
         gGameEngine.stage.addChild(singleBg);
         this.views.push(singleBg);
@@ -126,7 +126,7 @@ Menu = Class.extend({
 
         // multiplayer button
         var multiX = gGameEngine.size.w / 2 + modesDistance;
-        var multiBgGraphics = new createjs.Graphics().beginFill("rgba(0, 0, 0, 0.5)").drawRect(multiX, modesY, modeSize, modeSize);
+        var multiBgGraphics = new createjs.Graphics().beginFill("rgba(90, 90, 90, 0.5)").drawRect(multiX, modesY, modeSize, modeSize);
         var multiBg = new createjs.Shape(multiBgGraphics);
         gGameEngine.stage.addChild(multiBg);
         this.views.push(multiBg);

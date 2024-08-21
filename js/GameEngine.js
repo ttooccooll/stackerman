@@ -144,7 +144,7 @@ GameEngine = Class.extend({
     playSoundtrack: function() {
         if (!gGameEngine.soundtrackPlaying) {
             gGameEngine.soundtrack = createjs.Sound.play("game", "none", 0, 0, -1);
-            gGameEngine.soundtrack.setVolume(.2);
+            gGameEngine.soundtrack.setVolume(.9);
             gGameEngine.soundtrackPlaying = true;
         }
     },
@@ -337,11 +337,11 @@ GameEngine = Class.extend({
             var winText = "You won!";
             if (gGameEngine.playersCount > 1) {
                 var winner = gGameEngine.getWinner();
-                winText = winner == 0 ? "Player 1 won!" : "Player 2 won!";
+                winText = winner == 0 ? "Stacker 1 won!" : "DarthCoin won!";
             }
-            this.menu.show([{text: winText, color: '#669900'}, {text: ' ;D', color: '#99CC00'}]);
+            this.menu.show([{text: winText, color: '#ddd'}, {text: ' ;D', color: '#ddd'}]);
         } else {
-            this.menu.show([{text: 'Game Over', color: '#CC0000'}, {text: ' :(', color: '#FF4444'}]);
+            this.menu.show([{text: 'You lost your cowboy hat.', color: '#ddd'}, {text: ' :(', color: '#ddd'}]);
         }
     },
 

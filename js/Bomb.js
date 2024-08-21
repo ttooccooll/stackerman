@@ -114,9 +114,6 @@ Bomb = Entity.extend({
         bombSound.setVolume(0.1);
     },
 
-    /**
-     * Returns positions that are going to be covered by fire.
-     */
     getDangerPositions: function() {
         var positions = [];
         positions.push(this.position);

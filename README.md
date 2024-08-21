@@ -19,4 +19,3 @@ The source code is licensed under MIT License.
 Credits
 -------
 [Tile Art Batch by Hyptosis](http://www.newgrounds.com/art/view/hyptosis/tile-art-batch-1)<br>
-[One More LPC Alternate Character by Radomir Dopieralski](http://opengameart.org/content/one-more-lpc-alternate-character)<br>
