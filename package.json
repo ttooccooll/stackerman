@@ -2,16 +2,15 @@
     "name": "stackerman",
     "version": "1.0.0",
     "scripts": {
-      "start": "serve -l tcp://0.0.0.0:8000 & open http://127.0.0.1:8000",
-      "dev": "serve -l tcp://0.0.0.0:8000 & open http://127.0.0.1:8000",
-      "build": "npm install && bower install && npm run build-script"
+        "start": "serve -l tcp://0.0.0.0:8000 & open http://127.0.0.1:8000",
+        "dev": "serve -l tcp://0.0.0.0:8000 & open http://127.0.0.1:8000"
     },
     "dependencies": {
-      "serve": "^14.2.3",
-      "open": "^9.0.0"
-    },
-    "devDependencies": {
-      "bower": "^1.8.8"
+        "bootstrap": "^5.3.3",
+        "easeljs": "^1.0.2",
+        "open": "^9.0.0",
+        "preloadjs": "^1.0.1",
+        "serve": "^14.2.3",
+        "soundjs": "^1.0.1"
     }
-  }
-  
+}
