@@ -4,7 +4,7 @@
     "scripts": {
         "start": "node server.js",
         "dev": "node server.js",
-        "build": "npm install",
+        "build": "npm install && npm run prepare",
         "prepare": "echo 'Build step goes here'"
     },
     "dependencies": {
