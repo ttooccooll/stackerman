@@ -4,8 +4,7 @@
     "scripts": {
       "start": "node server.js",
       "dev": "node server.js",
-      "build": "npm install",
-      "prepare": "echo 'Build step goes here'"
+      "build": "npm install"
     },
     "dependencies": {
       "bootstrap": "^5.3.3",
@@ -14,10 +13,6 @@
       "open": "^9.0.0",
       "preloadjs": "^1.0.1",
       "soundjs": "^1.0.1"
-    },
-    "engines": {
-      "node": ">=14.0.0",
-      "npm": ">=6.0.0"
     }
   }
   
