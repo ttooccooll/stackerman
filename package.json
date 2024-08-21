@@ -4,7 +4,7 @@
     "scripts": {
       "start": "serve -l tcp://0.0.0.0:8000 & open http://127.0.0.1:8000",
       "dev": "serve -l tcp://0.0.0.0:8000 & open http://127.0.0.1:8000",
-      "postinstall": "bower install"
+      "build": "npm install && bower install && npm run build-script"
     },
     "dependencies": {
       "serve": "^14.2.3",
