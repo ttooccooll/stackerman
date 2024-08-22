@@ -40,11 +40,11 @@
         <div id="game">
             <canvas id="canvas" width="545" height="416"></canvas>
         </div>
-        <div id="paywall">
+        <!-- <div id="paywall">
             <h3 id="paywallTitle">Pay 10 sats to play!</h3>
             <div id="qrcode">
             </div>
-        </div>
+        </div> -->
 
         <div id="withdraw">
             <h3 id="paywallTitle">Withdraw sats</h3>
@@ -55,23 +55,32 @@
         <h3>Sats Earned<span class="blah"> You must have at least 10 sats to withdraw.</span></h3>
         <h4 id="satsLabel">0 sats</h4><button id="withdrawButton" type="button">Withdraw</button>
         <h3>How to play</h3>
-        <h4>Player 1</h4>
-        <ul>
-            <li><strong>arrow keys</strong> &hellip; move</li>
-            <li><strong>spacebar / alt</strong> &hellip; plant the bomb</li>
-        </ul>
-        <h4>Player 2</h4>
-        <ul>
-            <li><strong>W, A, S, D</strong> &hellip; move</li>
-            <li> <strong>shift</strong> &hellip; plant the bomb</li>
-        </ul>
-
+        <div class="row">
+            <div>
+                <h4>Player 1</h4>
+                <ul>
+                    <li><strong>arrow keys</strong> &hellip; move</li>
+                    <li><strong>spacebar / alt</strong> &hellip; plant the bomb</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Player 2</h4>
+                <ul>
+                    <li><strong>W, A, S, D</strong> &hellip; move</li>
+                    <li> <strong>shift</strong> &hellip; plant the bomb</li>
+                </ul>
+        </div>
+        </div>
         <i><strong>escape</strong> &hellip; menu</i>
-
+        <h4>bomb icon = more bombs</h4>
+        <h4>boom icon = bigger boom</h4>
+        <h4>shoe icon = speed power!</h4>
+        <h4>bitcoin icon = one sat</h4>
         <hr>
         <script type="text/javascript" src="js/Withdraw.js"></script>
 
         <div class="footer">
+            </br>
             <div class="links">
                 <a href="https://national-debt-snake.vercel.app/" target="blank">snake</a> \
                 <a href="https://nostrminusnostr.vercel.app/" target="blank">nostr</a> \
