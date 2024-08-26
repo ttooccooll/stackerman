@@ -17,7 +17,7 @@ function makeWithdrawQRCode(data){
 function withdraw() {
 
     if (gGameEngine.totalSats == 0) {
-        alert("you have no sats");
+        alert("What are you trying to pull!? You don't have any sats yet, goofball!");
         return;
     }
 
