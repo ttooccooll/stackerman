@@ -87,7 +87,7 @@ function checkWithdraw() {
                 setTimeout(function() {
                     checkWithdraw();
                 }, 2000);
-            } else if (status === "completed") {
+            } else if (status === "Boom!") {
               updateWithdrawUI();
             }
         }
